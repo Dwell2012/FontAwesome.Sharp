@@ -1,17 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
-    <PropertyGroup>
-        <SolutionDir Condition="'$(SolutionDir)' == ''">..\</SolutionDir>
-    </PropertyGroup>
-    <Import Project="$(SolutionDir)\solution.targets" />
-
     <PropertyGroup>
         <TargetFrameworks>net6.0-windows;net48;net472;netcoreapp3.1;</TargetFrameworks>
         <UseWindowsForms>true</UseWindowsForms>
         <UseWPF>true</UseWPF>
+        <LangVersion>10.0</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\FontAwesome.Sharp\FontAwesome.Sharp.csproj" />
+      <PackageReference Include="FontAwesome.Sharp" Version="6.3.0" />
     </ItemGroup>
+
+    
 </Project>
